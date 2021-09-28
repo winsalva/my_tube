@@ -2,7 +2,7 @@
   <div class="logo-container">
     <img class="logo" src="<%= Routes.static_path(@conn, "/images/myvideo-logo.jpg") %>"/>
   </div>
-  <div class="app-name">MyTube</div>
+  <div class="app-name">MyVideo</div>
   <div class="nav-options">
     <a href="<%= Routes.search_path(@conn, :index) %>">
       <img class="icon-options" src="<%= Routes.static_path(@conn, "/images/search3.png") %>"/></a>

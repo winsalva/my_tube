@@ -1,8 +1,6 @@
-
+<div class="container">
 <%= render(MyTubeWeb.SharedView, "back-menu.html",conn: @conn, name: @user.name) %>
 
-
-<div class="container">
   <br>
   <div class="heading">
     <%= link "Upload a video", to: Routes.upload_path(@conn, :new), method: :get, class: "upload-link" %>

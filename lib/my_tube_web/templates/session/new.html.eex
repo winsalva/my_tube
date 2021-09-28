@@ -1,6 +1,5 @@
 <div class="container">
-<div class="heading">Login here
-</div>
+<div class="heading">Login here</div>
 
 <%= if get_flash(@conn, :error) do %>
 <p class="alert alert-danger" role="alert">

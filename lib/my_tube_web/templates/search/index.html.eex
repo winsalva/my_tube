@@ -1,7 +1,5 @@
-
-<%= render(MyTubeWeb.SharedView, "back-menu.html", conn: @conn, name: "Search MyTube") %>
-
 <div class="container">
+<%= render(MyTubeWeb.SharedView, "back-menu.html", conn: @conn, name: "Search MyVideo") %>
   
 <%= form_for @conn, Routes.search_path(@conn, :search), fn f -> %>
 

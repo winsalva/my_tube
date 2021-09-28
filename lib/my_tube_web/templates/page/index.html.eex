@@ -1,6 +1,5 @@
-<%= render(MyTubeWeb.SharedView, "menu.html",conn: @conn) %>
-
 <div class="container">
+<%= render(MyTubeWeb.SharedView, "menu.html", conn: @conn) %>
 
   <%= if get_flash(@conn, :info) do %>
   <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
