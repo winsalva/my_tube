@@ -1,24 +1,26 @@
 <div class="container">
-<div class="heading">Login here</div>
+  <%= render(MyTubeWeb.SharedView, "back-menu.html",conn: @conn, name: "Login here") %>
+  <br/>
+  <div class="padding-lr-1rem">
+    <%= if get_flash(@conn, :info) do %>
+  <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+  <% end %>
 
-<%= if get_flash(@conn, :error) do %>
-<p class="alert alert-danger" role="alert">
-  <%= get_flash(@conn, :error) %>
-</p>
-<% end %>
-
-<%= form_for @conn, Routes.session_path(@conn, :create), fn f -> %>
-
-<label>Enter email</label>
-<%= email_input f, :email %>
-
-<label>Enter password</label>
-<%= password_input f, :password %>
-
-<div class="submit">
-<%= submit "Log in" %>
+    <%= if get_flash(@conn, :error) do %>
+    <p class="alert alert-danger" role="alert">
+      <%= get_flash(@conn, :error) %>
+    </p>
+    <% end %>
+    
+    <%= form_for @conn, Routes.session_path(@conn, :create), fn f -> %>
+    <label>Enter email</label>
+    <%= email_input f, :email %>
+    <label>Enter password</label>
+    <%= password_input f, :password %>
+    <div class="submit">
+      <%= submit "Log in" %>
+    </div>
+    <% end %>
+  </div>
 </div>
 
-<% end %>
-
-</div>

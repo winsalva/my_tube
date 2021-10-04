@@ -21,8 +21,8 @@ defmodule MyTubeWeb.UserController do
   case User.insert_user(params) do
     {:ok, _user} ->
       conn
-      |> put_flash(:info, "Congrats for registering your account!")
-      |> redirect(to: Routes.page_path(conn, :index))
+      |> put_flash(:info, "Congrats for registering your account! You can now log in using your email and password.")
+      |> redirect(to: Routes.session_path(conn, :login))
     {:error, %Ecto.Changeset{} = changeset} ->
       conn
       |> render(:new, changeset: changeset)

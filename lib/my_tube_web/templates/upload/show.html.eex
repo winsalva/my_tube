@@ -1,5 +1,5 @@
 <div class="container">
-<%= render(MyTubeWeb.SharedView, "back-menu.html",conn: @conn, name: "") %>
+<%= render(MyTubeWeb.SharedView, "back-menu.html",conn: @conn, name: @upload.title) %>
 
     <div class="video-content">
       <div class="name-description-container">

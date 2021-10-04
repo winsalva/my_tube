@@ -1,4 +1,3 @@
-
 <nav class="nav-container">
   <div class="logo-container">
     <img class="logo" src="<%= Routes.static_path(@conn, "/images/myvideo-logo.jpg") %>"/>

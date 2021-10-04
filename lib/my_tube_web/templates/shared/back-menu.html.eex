@@ -26,7 +26,7 @@
     <% end %>
     <%= link "Home", to: Routes.page_path(@conn, :index), class: "a" %>
     <%= if @conn.assigns.current_user do %>
-    <%= link @conn.assigns.current_user.name, to: Routes.user_path(@conn, :show, @conn.assigns.current_user.id), class: "a" %>
+    <%= link "My Account", to: Routes.user_path(@conn, :show, @conn.assigns.current_user.id), class: "a" %>
     <%= link "Log out", to: Routes.session_path(@conn, :logout), class: "a", method: :delete, data: [confirm: "Are you sure to log out?"] %>
     <% else %>
     <%= link "Sign up", to: Routes.user_path(@conn, :new), class: "a" %>

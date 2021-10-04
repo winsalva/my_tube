@@ -1,6 +1,7 @@
 <div class="container">
-<div class="heading">Register here
-</div>
+  <%= render(MyTubeWeb.SharedView, "back-menu.html",conn: @conn, name: "Register here") %>
+  <br/>
+  <div class="padding-lr-1rem">
 
 <%= form_for @changeset, Routes.user_path(@conn, :create), [multipart: true], fn f -> %>
 <%= if @changeset.action do %>

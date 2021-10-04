@@ -6,7 +6,9 @@
 <div class="footer">
 <%= search_input f, :query, placeholder: "Search for title..", class: "footer-tb" %>
 
+<div class="submit">
   <%= submit "Search" %>
+</div>
 <% end %>
 </div>
 

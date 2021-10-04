@@ -1,6 +1,6 @@
 /* The side navigation menu */
 .sidenav {
-    border-left: 2px solid #273d4b;
+    border-left: .5px solid #273d4b;
 height: 100%; /* 100% Full-height */
 width: 0; /* 0 width - change this with JavaScrip\
 \
@@ -9,7 +9,7 @@ position: fixed; /* Stay in place */
 z-index: 1; /* Stay on top */
 top: 0; /* Stay at the top */
 right: 0;
-background-color: #21242d; /* saddlebrown */
+background-color: #020202; /* saddlebrown */
 overflow-x: hidden; /* Disable horizontal scroll \
 \
 */
@@ -26,7 +26,7 @@ padding: 8px 8px 8px 32px;
 text-decoration: none;
 font-size: 1.8rem;
 font-weight: 450;
-background-color: #21242d;
+background-color: #020202;
 color: #ff7100;
 display: block;
 transition: 0.5s;
@@ -35,8 +35,8 @@ transition: 0.5s;
 \
 ge their color */
 .sidenav .a:hover {
-    color: #ff7100;
-    background-color: #373d4b;
+    color: #fff;
+    background-color: #555;
 }
 
 
