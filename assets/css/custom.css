@@ -9,10 +9,15 @@
 }
 
 .upload-link {
-    background-color: #373d4b;
-    padding: 0.5rem;
+    background-color: #020202;
+    padding: 0.5rem 1rem;
     border-radius: 3px;
-    border: 1px solid #373d4b;
+    border: 1px solid #ff7100;
+    color: #ff7100;
+}
+.upload-link:hover {
+    background-color: #ff7100;
+    color: #020202;
 }
 
 /* former color #21242d */

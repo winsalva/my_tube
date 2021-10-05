@@ -1,7 +1,6 @@
 <div class="container">
-<%= render(MyTubeWeb.SharedView, "back-menu.html", conn: @conn, name: "") %>
-
-<div class="heading"><h3>Upload Video</h3></div>
+<%= render(MyTubeWeb.SharedView, "back-menu.html", conn: @conn, name: "New Video") %>
+<br>
 <%= form_for @changeset, Routes.upload_path(@conn, :create), fn f -> %>
 <%= if @changeset.action do %>
 <div class="alert alert-danger">
@@ -18,7 +17,7 @@
 <%= error_tag f, :file %>
 
 <label>Description</label>
-<%= text_input f, :description, placeholder: "Add a video description...(required)" %>
+<%= textarea f, :description, placeholder: "Add a video description...(required)" %>
 <%= error_tag f, :description %>
 
 <div class="submit">

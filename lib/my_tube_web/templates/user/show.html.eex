@@ -3,7 +3,7 @@
 
   <br>
   <div class="heading">
-    <%= link "Upload a video", to: Routes.upload_path(@conn, :new), method: :get, class: "upload-link" %>
+    <%= link "Upload Video", to: Routes.upload_path(@conn, :new), method: :get, class: "upload-link" %>
   </div>
 
   <br>
