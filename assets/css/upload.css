@@ -17,12 +17,12 @@
 }
 
 .commentor-name {
-    background-color: #5bb;
-    padding: 4px;
+    background-color: #ff4700;
+    padding: .5rem 1rem;
     margin-right: 1rem;
     width: fit-content;
     width: -moz-fit-content;
-    border-radius: 15px;
-    color: #000000;
-    font-weight: 500;
+    border-radius: 2rem;
+    color: #fff;
+    font-weight: 700;
 }

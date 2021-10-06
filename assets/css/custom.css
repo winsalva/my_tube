@@ -3,7 +3,7 @@
 }
 .heading {
     text-align: center;
-    color: #ff7100;
+    color: #000000;
     font-weigth: bold;
     font-size: 2rem;
 }
@@ -27,7 +27,7 @@
     position: sticky;
     display: flex;
     padding-top: 0.8rem;
-    background-color: #000000;
+    background-color: #ff4700;
     border-bottom: 1px solid #21242d;
 }
 
@@ -61,15 +61,15 @@ form {
     padding-bottom: 0.5rem;
     display: flex;
     margin-bottom: 1rem;
-    background-color: #000000;
+    background-color: #ff4700;
     border-bottom: 1px solid #21242d;
 }
 
 .name {
     font-size: 1.8rem;
-    color: #ff7100;
+    color: #fff;
     flex: 1;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .app-name {
@@ -77,8 +77,8 @@ form {
     flex: 1;
     padding-left: 1rem;
     font-size: 1.8rem;
-    font-weight: 500;
-    color: #ff7100;
+    font-weight: 700;
+    color: #fff;
 }
 
 .nav-options {
@@ -115,11 +115,11 @@ form {
     width: 25px;
     height: 0.25rem;
     margin: 1.8px;
-    background: #ff7100;
+    background: #fff;
 }
 
 .menu-icon:hover ~ .icon {
-    background-color: #000000;
+    background-color: #555;
 }
 
 .search {
@@ -216,7 +216,7 @@ p {
     text-align: center;
     margin-top: 0.5rem;
     font-weight: bold;
-    color: #ff7100;
+    color: #000000;
 }
 
 .name-description-container {
@@ -238,6 +238,19 @@ p {
     color: #f5f5f5;
     margin: 0.5rem;
 }
+.upload-description:hover {
+    max-height: none;
+}
+.site-footer {
+    background-color: #555;
+    text-align: center;
+    padding: .5rem 0;
+}
+.site-footer > p {
+    margin: auto;
+    color: #fff;
+    font-weight: 500;
+}
 
 .upload-title {
     font-weight: 450;
@@ -249,7 +262,7 @@ p {
 }
 
 .u-name {
-    color: #5bb;
+    color: #ff4700;
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {

@@ -18,6 +18,9 @@ defmodule MyTubeWeb.GlobalHelpers do
 
   # take the first character from a user's name
   def avatar_name(user_name) do
-    String.first(user_name)
+    user_name
+    |> String.trim()
+    |> String.first()
+    |> String.upcase()
   end
 end

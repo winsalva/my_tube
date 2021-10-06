@@ -4,7 +4,7 @@
     <div class="video-content">
       <div class="name-description-container">
         <div class="author-name">
-          <span class="commentor-name"><%= @upload.user.name %></span> <%= @upload.title %>
+          <span class="commentor-name"><%= avatar_name(@upload.user.name) %></span> <%= @upload.title %>
         </div>
         <div class="upload-description">
           <%= @upload.description %>
@@ -36,7 +36,7 @@
     <%= for comment <- @upload.comments do %>
 	<div class="comment-content">
 	  <%= if comment.user do %>
-	  <span class="commentor-name"><%= comment.user.name %>  
+	  <span class="commentor-name"><%= avatar_name(comment.user.name) %>  
 	  </span>
 	  <%= comment.content %>
 	  <% else %>
