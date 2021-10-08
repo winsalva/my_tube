@@ -71,4 +71,20 @@ defmodule MyTube.Query.Upload do
 
     Repo.one(query)
   end
+
+  def edit_upload(id) do
+    Repo.get(Upload, id)
+    |> Upload.changeset
+  end
+
+  def update_upload(id, params) do
+    Repo.get(Upload, id)
+    |> Upload.changeset(params)
+    |> Repo.update()
+  end
+
+  def delete_upload(id) do
+    Repo.get(Upload, id)
+    |> Repo.delete()
+  end
 end

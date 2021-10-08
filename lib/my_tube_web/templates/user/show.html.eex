@@ -29,9 +29,11 @@
         <div class="comment">
           <%= link "#{count(upload.comments)} Comment", to: Routes.upload_path(@conn, :show, upload.id), method: :get, class: "post-comment" %>
         </div>
-
+	<div class="upload-options-container">
+	  <%= link "Edit", to: Routes.upload_path(@conn, :edit, upload.id) %>
+	  <%= link "Delete", to: Routes.upload_path(@conn, :delete, upload.id), method: :delete, data: [confirm: "Are you sure?"] %>
+	</div>
     </div>
-
     <% end %>
     <% end %>
 </div>

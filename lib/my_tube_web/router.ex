@@ -33,7 +33,7 @@ defmodule MyTubeWeb.Router do
     post "/search", SearchController, :search
 
     resources "/uploads", UploadController,
-    only: [:new, :create, :show] do
+    only: [:new, :create, :show, :edit, :update, :delete] do
       resources "/comments", CommentController,
       only: [:create]
     end

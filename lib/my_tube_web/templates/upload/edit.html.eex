@@ -1,0 +1,27 @@
+<div class="container">
+<%= render(MyTubeWeb.SharedView, "back-menu.html", conn: @conn, name: "Edit Upload") %>
+<br>
+<%= form_for @upload, Routes.upload_path(@conn, :update, @upload.data), fn f -> %>
+<%= if @upload.action do %>
+<div class="alert alert-danger">
+  <p class="alert-danger">Something went wrong. Please check errors below.</p>
+</div>
+<% end %>
+
+<label>Title</label>
+<%= text_input f, :title, placeholder: "Add a video title... (required)" %>
+<%= error_tag f, :title %>
+
+<label>URL</label>
+<%= text_input f, :file, placeholder: "https://youtu.be/eCaKkDPERv... (required)"  %>
+<%= error_tag f, :file %>
+
+<label>Description</label>
+<%= textarea f, :description, placeholder: "Add ashort video description...(required)" %>
+<%= error_tag f, :description %>
+
+<div class="submit">
+  <%= submit "Save Changes" %>
+</div>
+<% end %>
+</div>
