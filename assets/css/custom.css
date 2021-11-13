@@ -27,7 +27,7 @@
     position: sticky;
     display: flex;
     padding-top: 0.8rem;
-    background-color: #ff4700;
+    background-color: #21242d;
     border-bottom: 1px solid #21242d;
 }
 
@@ -61,13 +61,13 @@ form {
     padding-bottom: 0.5rem;
     display: flex;
     margin-bottom: 1rem;
-    background-color: #ff4700;
+    background-color: #21242d;
     border-bottom: 1px solid #21242d;
 }
 
 .name {
-    font-size: 1.8rem;
-    color: #fff;
+    font-size: 2rem;
+    color: #ff4700;
     flex: 1;
     font-weight: 700;
 }
@@ -76,9 +76,9 @@ form {
     text-align: left;
     flex: 1;
     padding-left: 1rem;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
-    color: #fff;
+    color: #ff4700;
 }
 
 .nav-options {
@@ -113,9 +113,9 @@ form {
 
 .icon {
     width: 25px;
-    height: 0.25rem;
-    margin: 1.8px;
-    background: #fff;
+    height: 0.3rem;
+    margin: 2px;
+    background: #ff4700;
 }
 
 .menu-icon:hover ~ .icon {

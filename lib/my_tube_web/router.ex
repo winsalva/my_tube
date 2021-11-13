@@ -56,9 +56,11 @@ defmodule MyTubeWeb.Router do
 
 
   # Other scopes may use custom stacks.
-  # scope "/api", MyTubeWeb do
-  #   pipe_through :api
-  # end
+   scope "/api", MyTubeWeb.Api, as: :api do
+     pipe_through :api
+
+     get "/uploads", UploadController, :index
+   end
 
   # Enables LiveDashboard only for development
   #
